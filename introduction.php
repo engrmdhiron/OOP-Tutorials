@@ -4,6 +4,6 @@
 	<title>PHP Tutorials</title>
 </head>
 <body>
-	<h1>PHP Introduction</h1>
+<h1 style="text-align:center; color:blue; "><u>PHP Introductionddddd</u> </h1>
 </body>
 </html>
