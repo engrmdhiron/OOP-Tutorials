@@ -12,7 +12,7 @@
 <p>04) PHP free download and use</p>
 <p>05) PHP script are executed on the server</p>
 
-<h3 style="color:blue;"><u>What can php do?</u></h3>
-<p>PHP can generate dynamic page content</p>
+<h3 style="color:blue;">PHP Functions</h3>
+<a href="class_property_object_method.php" target="_blank"><button>Class, Property, Objects and Methods</button></a>
 </body>
 </html>
