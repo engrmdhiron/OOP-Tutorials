@@ -13,5 +13,6 @@
 <p>05) PHP script are executed on the server</p>
 
 <h3 style="color:blue;"><u>What can php do?</u></h3>
+<p>PHP can generate dynamic page content</p>
 </body>
 </html>
