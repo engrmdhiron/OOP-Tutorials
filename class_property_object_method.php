@@ -29,7 +29,7 @@
     class UserInf{
         //Property
         public $name;
-        public $email
+        public $email;
     }
 
 
