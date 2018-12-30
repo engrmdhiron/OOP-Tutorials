@@ -29,8 +29,8 @@ class UserData {
 class Admin extends UserData{
     public $age;
 
-    public function display($name, $email){
-        echo "Name is ".$this->name=$name.'<br/> Email is '.$this->email=$email.'<br/> Age is '.$this->age.' Years';
+    public function display($name, $email, $age){
+        echo "Name is ".$this->name=$name.'<br/> Email is '.$this->email=$email.'<br/> Age is '.$this->age=$age.' Years';
     }
 
 }
@@ -44,7 +44,7 @@ $age = 27;
 // $userData->display($name, $email);
 
 $adminData = new Admin;
-$adminData->display($name, $email);
+$adminData->display($name, $email, $age);
 
 
 
