@@ -18,11 +18,11 @@
     
         //Function or method create
         public function personName(){
-            echo "My name is ".$this->name.'<br/>';
+            echo "My name is: ".$this->name.'<br/>';
         }
 
-        public function personAge(){
-        
+        public function personAge($value){
+            echo "My age is: ". $this->age=$value;
         }
     }
 
@@ -32,6 +32,7 @@
     $personeOne = new person;
     $personeOne->name='Md.Hiron Mollik (Sagor)';
     $personeOne->personName();
+    $personeOne->personAge(27);
 
 
     
