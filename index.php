@@ -14,6 +14,7 @@
 
 <h3 style="color:blue;">PHP Functions</h3>
 <a href="class_property_object_method.php"><button>Class, Property, Objects and Methods</button></a><br>
-<a href="class_property_object_method_part_2.php"><button>Class, Property, Objects and Methods Part-2</button></a>
+<a href="class_property_object_method_part_2.php"><button>Class, Property, Objects and Methods Part-2</button></a><br>
+<a href="construct.php"><button>Construct</button></a><br>
 </body>
 </html>
