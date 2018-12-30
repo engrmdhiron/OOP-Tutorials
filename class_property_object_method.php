@@ -22,14 +22,19 @@
         }
 
         public function personAge($value){
-            echo "My age is: ". $this->age=$value;
+            echo "My age is: ". $this->age=$value.'<br/>';
         }
     }
 
-    class UserInf{
+    class UserInfo{
         //Property
         public $name;
         public $email;
+        public $address;
+
+        public function personalInfo($name, $email, $address){
+           return $info = "My name is ".$this->name=$name.'<br/>'.'My email address is '.$this->email=$email.'<br/>'.'My address is '.$this->address=$address;
+        }
     }
 
 
@@ -39,6 +44,12 @@
     $personeOne->name='Md.Hiron Mollik (Sagor)';
     $personeOne->personName();
     $personeOne->personAge(27);
+
+    $myInformation = new UserInfo;
+    $name = 'Md.Hiron Mollik';
+    $email = 'prog.hiron@gmail.com';
+    $address = 'House#10, Road#04, Zillpar, Dhaka-1216.';
+    echo $myInformation->personalInfo($name, $email, $address);
 
 
     
