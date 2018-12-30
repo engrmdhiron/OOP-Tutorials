@@ -13,7 +13,7 @@
 <p>05) PHP script are executed on the server</p>
 
 <h3 style="color:blue;">PHP Functions</h3>
-<a href="class_property_object_method.php" target="_blank"><button>Class, Property, Objects and Methods</button></a><br>
-<a href="class_property_object_method_part_2.php" target="_blank"><button>Class, Property, Objects and Methods Part-2</button></a>
+<a href="class_property_object_method.php"><button>Class, Property, Objects and Methods</button></a><br>
+<a href="class_property_object_method_part_2.php"><button>Class, Property, Objects and Methods Part-2</button></a>
 </body>
 </html>

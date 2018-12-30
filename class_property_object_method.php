@@ -9,7 +9,7 @@
 <body>
     <h1 style="color:blue; text-align:center;"><u>Class, Property, Object and Method</u> 
     <br>
-    <a href="index.php" target="_blank"><button>Back to Index</button></a></h1>
+    <a href="index.php"><button>Back to Index</button></a></h1>
     <p>Create class</p>
     <p>Access modifier (Public, Private, Protected)</p>
     <?php
