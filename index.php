@@ -18,5 +18,6 @@
 <a href="construct.php"><button>Construct</button></a><br>
 <a href="destructor.php"><button>Destructor</button></a><br>
 <a href="constants.php"><button>Constants</button></a><br>
+<a href="static_propertics_methods.php"><button>Static Propertics and Methods</button></a><br>
 </body>
 </html>
