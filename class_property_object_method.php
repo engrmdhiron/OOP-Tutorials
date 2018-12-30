@@ -26,6 +26,12 @@
         }
     }
 
+    class UserInf{
+        //Property
+        public $name;
+        public $email
+    }
+
 
     //Create Object
     //'->' this is a object operator
