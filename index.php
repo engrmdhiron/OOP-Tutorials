@@ -20,5 +20,6 @@
 <a href="constants.php"><button>Constants</button></a><br>
 <a href="static_properties_methods.php"><button>Static Properties and Methods</button></a><br>
 <a href="inheritance.php"><button>Inheritance</button></a><br>
+<a href="preventing_from_extending_and_overriding.php"><button>InherPreventing from extending and overriding</button></a><br>
 </body>
 </html>
