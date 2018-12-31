@@ -14,7 +14,7 @@
    <H4>Type of access modifier</H4>
    <p>1) Public: Public access modifier can work in global platform, not in your limit. public property and method will be use any place or location. </p>
    <p>2) Private: Private access modifier can work in your class, bind in your limit, private property and method will be use only inside your class, can't call outside your class, even can't make your class's objects. </p>
-   <p>3) Protected</p>
+   <p>3) Protected: Protected access modifier can work in your class and sub class, but bind your limit, protected property adn method will be use only inside your class and inside your sub-class, but can't use your outside class and outside sub-class, althogh, you can't use that's class's objects.</p>
 
     
 </body>
@@ -24,9 +24,10 @@
 class UserData {
 
     public $name;
-    public $email;
+    private $email;
+    protected $address;
 
-    public function display($name, $email){
+    protected function display($name, $email){
         echo "User name is ".$this->name=$name.' <br/> User email is '.$this->email=$email;
     }
 }
@@ -39,6 +40,10 @@ class Admin extends UserData{
         echo "Name is ".$this->name=$name.'<br/> Email is '.$this->email=$email.'<br/> Age is '.$this->age.' Years';
     }
 
+    public function userInfo(){
+        echo "Email address is ".$this->email;
+    }
+
 }
 
 
@@ -46,12 +51,18 @@ class Admin extends UserData{
 $name = "Md.Hiron Mollik";
 $email = "prog.mdhiron@gmail.com";
 $age = 27;
-// $userData = new UserData;
-// $userData->display($name, $email);
+echo "<br>";
+$address = "Mohammadpur, Dhaka-1207";
+$userData = new UserData;
+$userData->display($name, $email);
 
 $adminData = new Admin;
 $adminData->age=$age;
+echo "<br>";
 $adminData->display($name, $email);
+echo "<br>";
+// echo 'Private access modifier : '.$userData->email;
+// echo 'Protected access modifier : '.$userData->address;
 
 
 
