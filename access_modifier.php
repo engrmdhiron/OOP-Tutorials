@@ -12,9 +12,10 @@
    <a href="index.php"><button>Back to Index</button></a></h1>
 
    <H4>Type of access modifier</H4>
-   <p>1) Public </p>
-   <p>2) Private </p>
+   <p>1) Public: Public access modifier can work in global platform, not in your limit. public property and method will be use any place or location. </p>
+   <p>2) Private: Private access modifier can work in your class, bind in your limit, private property and method will be use only inside your class, can't call outside your class, even can't make your class's objects. </p>
    <p>3) Protected</p>
+
     
 </body>
 </html>
