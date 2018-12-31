@@ -18,7 +18,8 @@
 
 <?php
 
-class UserData {
+//Used final keywords in class
+final class UserData {
     public $name;
     public $age;
 
@@ -27,14 +28,16 @@ class UserData {
         $this->age = $age;
     }
 
-    public function userInfo() {
+    //Used final keywords in function
+    public final function userInfo() {
         echo 'My name is '.$this->name.' and age is '.$this->age.' Years';
     }
 }
 
+//extends class
 class Admin extends UserData {
 
-    public final function userInfo() {
+    public function userInfo() {
         echo 'My name is '.$this->name.' and age is '.$this->age.' Years';
     }
     
