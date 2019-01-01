@@ -25,10 +25,18 @@ class UserData {
 
     public $name;
     private $email;
-    protected $address;
+    private $address='Mirpur,Dhaka-1216';
+    protected $mobile='01671565656';
 
-    protected function display($name, $email){
-        echo "User name is ".$this->name=$name.' <br/> User email is '.$this->email=$email;
+
+    public function display($name, $email){
+        echo "User name is ".$this->name=$name.' <br/> User email is '.$this->email=$email.'<br/>';
+        // echo $this->address.' Inside the claass';
+        echo $this->mobile.' protected inside the class';
+    }
+
+    private function info(){
+        echo 'This is private function';
     }
 }
 
@@ -38,10 +46,19 @@ class Admin extends UserData{
 
     public function display($name, $email){
         echo "Name is ".$this->name=$name.'<br/> Email is '.$this->email=$email.'<br/> Age is '.$this->age.' Years';
+        // echo $this->address.' Inside the suub-claass';
+        echo '<br/>';
+        echo $this->mobile.' protected inside the sub-class';
     }
 
     public function userInfo(){
         echo "Email address is ".$this->email;
+        
+    }
+
+    //Private method
+    public function info(){
+        echo 'Private method inside of sub-class';
     }
 
 }
@@ -52,7 +69,6 @@ $name = "Md.Hiron Mollik";
 $email = "prog.mdhiron@gmail.com";
 $age = 27;
 echo "<br>";
-$address = "Mohammadpur, Dhaka-1207";
 $userData = new UserData;
 $userData->display($name, $email);
 
@@ -61,8 +77,13 @@ $adminData->age=$age;
 echo "<br>";
 $adminData->display($name, $email);
 echo "<br>";
+// echo $userData->address.' outside the class';
 // echo 'Private access modifier : '.$userData->email;
 // echo 'Protected access modifier : '.$userData->address;
+// echo $userData->mobile.' protected outside the class'
+
+// $userData->info();
+$adminData->info(); 
 
 
 
