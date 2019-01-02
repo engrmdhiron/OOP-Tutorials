@@ -39,7 +39,7 @@ class Admin extends UserData {
         $this->mobile = $mobile;
     }
 
-    //function overwrite is called polymorphism
+    //function overriding is called polymorphism
     public function displayData(){
         echo 'My name is: '.$this->name.' , and email is: '.$this->email.' and my mobile number is: '.$this->mobile;
     }

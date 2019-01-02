@@ -23,5 +23,6 @@
 <a href="preventing_from_extending_and_overriding.php"><button>InherPreventing from extending and overriding</button></a><br>
 <a href="access_modifier.php"><button>Access Modifier</button></a><br>
 <a href="polymorphism.php"><button>Polymorphism</button></a><br>
+<a href="interface.php"><button>Interface</button></a><br>
 </body>
 </html>
