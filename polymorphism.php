@@ -14,38 +14,44 @@
 </html>
 
 <?php
+
 class UserData {
 
     public $name;
     public $email;
 
-    public function display($name, $email){
-        echo "User name is ".$this->name=$name.' <br/> User email is '.$this->email=$email;
+    public function __construct($name, $email){
+        $this->name = $name;
+        $this->email = $email;
+    }
+
+    public function displayData(){
+        echo 'My name is: '.$this->name.' , and email is: '.$this->email;
     }
 }
 
+class Admin extends UserData {
+    public $mobile;
 
-class Admin extends UserData{
-    public $age;
-
-    public function display($name, $email){
-        echo "Name is ".$this->name=$name.'<br/> Email is '.$this->email=$email.'<br/> Age is '.$this->age.' Years';
+    public function __construct($name, $email, $mobile){
+        $this->name = $name;
+        $this->email = $email;
+        $this->mobile = $mobile;
     }
 
+    //function overwrite is called polymorphism
+    public function displayData(){
+        echo 'My name is: '.$this->name.' , and email is: '.$this->email.' and my mobile number is: '.$this->mobile;
+    }
 }
 
-
-
-$name = "Md.Hiron Mollik";
-$email = "prog.mdhiron@gmail.com";
-$age = 27;
-// $userData = new UserData;
-// $userData->display($name, $email);
-
-$adminData = new Admin;
-$adminData->age=$age;
-$adminData->display($name, $email);
-
-
+$name = 'Md.Hiron Mollik';
+$email = 'engr.mdhiron@gmail.com';
+$userData = new UserData($name, $email);
+$userData->displayData();
+echo '<br>';
+$mobile = '01671909000';
+$adminData = new Admin($name, $email, $mobile);
+$adminData->displayData();
 
 ?>
