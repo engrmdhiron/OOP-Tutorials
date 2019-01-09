@@ -15,6 +15,15 @@
 </html>
 
 <?php
+    interface mySchool {
+        public function school();
+    }
+
+    interface myCollage {
+        public function collage();
+    }
+
+    
 
 
 

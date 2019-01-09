@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-   <h1 style="color:blue; text-align:center;"><u>Inheritance</u>
+   <h1 style="color:blue; text-align:center;"><u>Abstract</u>
    <br>
    <a href="index.php"><button>Back to Index</button></a></h1>
     
@@ -49,4 +49,4 @@ $adminData->display($name, $email);
 
 
 
-?> 
+?>
