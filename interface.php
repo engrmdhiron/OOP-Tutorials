@@ -15,13 +15,27 @@
 </html>
 
 <?php
-    interface mySchool {
-        public function school();
+    interface school{
+        public function mySchool();
     }
 
-    interface myCollage {
-        public function collage();
+    class Teacher implements school{
+
+        // public function __construct(){
+        //     $this->mySchool();
+        // }
+        
+        public function mySchool(){
+            echo "sagor";
+        }
     }
+
+    $teacher = new Teacher;
+    $teacher->mySchool();
+
+
+
+    
 
     
 
