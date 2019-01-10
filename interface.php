@@ -19,19 +19,43 @@
         public function mySchool();
     }
 
-    class Teacher implements school{
+    interface collage{
+        public function myCollage();
+    }
+
+    class Students {
+
+        public function student($name, $age){
+            echo "My name is : ".$name.' and age is : '.$sage;
+        }
+    }
+
+    class Teacher extends Students implements school, collage{
 
         // public function __construct(){
         //     $this->mySchool();
         // }
+        public function student($name, $age, $mobile=false){
+            echo "My name is ".$name.' , age is '.$age.' and mobile number is '.$mobile.'<br>';
+        }
         
         public function mySchool(){
-            echo "sagor";
+            echo "My School is Chautpur High School <br>";
+        }
+
+        public function myCollage(){
+            echo "My collage is Infra Polytechnic Institute";
         }
     }
 
+    $name = 'Md Hiron Mollik (sagor)';
+    $age = 27;
+    $mobile = '01671909000';
+
     $teacher = new Teacher;
+    $teacher->student($name, $age, $mobile);
     $teacher->mySchool();
+    $teacher->myCollage();
 
 
 
