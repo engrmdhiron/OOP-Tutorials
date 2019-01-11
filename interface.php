@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-   <h1 style="color:blue; text-align:center;"><u>Interface</u>
-   <br>
-   <a href="index.php"><button>Back to Index</button></a></h1>
-   <p>Interfaces are defined to provide a common function names to the implementers. Different implementors can implement those interfaces according to their requirements. You can say, interfaces are skeletons which are implemented by developers.</p>
-<blockquote>
+    <h1 style="color:blue; text-align:center;"><u>Interface</u>
+    <br>
+    <a href="index.php"><button>Back to Index</button></a></h1>
+    <p>Interfaces are defined to provide a common function names to the implementers. Different implementors can implement those interfaces according to their requirements. You can say, interfaces are skeletons which are implemented by developers.</p>
+    <blockquote>
     <pre>
         <code>
         interface school{
@@ -56,10 +56,9 @@
         $teacher->mySchool();
         $teacher->myCollage();
         </code>
-    </pre>
-</blockquote>
-</code>
-<?php 
+        </pre>
+    </blockquote>
+    <?php 
     interface school{
         public function mySchool();
     }
