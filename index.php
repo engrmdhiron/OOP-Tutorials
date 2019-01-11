@@ -25,5 +25,6 @@
 <a href="polymorphism.php"><button>Polymorphism</button></a><br>
 <a href="interface.php"><button>Interface</button></a><br>
 <a href="abstract.php"><button>Abstract</button></a><br>
+<a href="magic_methods.php"><button>Magic Meghods</button></a><br>
 </body>
 </html>
