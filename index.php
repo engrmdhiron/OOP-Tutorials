@@ -26,5 +26,6 @@
 <a href="interface.php"><button>Interface</button></a><br>
 <a href="abstract.php"><button>Abstract</button></a><br>
 <a href="magic_methods.php"><button>Magic Meghods</button></a><br>
+<a href="class_and_method_existence.php"><button>Class & Method Existence</button></a><br>
 </body>
 </html>
