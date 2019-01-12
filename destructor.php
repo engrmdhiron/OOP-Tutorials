@@ -10,38 +10,41 @@
    <h1 style="color:blue; text-align:center;"><u>Destructor</u>
    <br>
    <a href="index.php"><button>Back to Index</button></a></h1>
+   <h3>__destructor</h3>
+   <p>The destructor method will be called as soon as there are no other references to a particular object, or in any order during the shutdown sequence. </p>
+   <pre>
+       <code>
+           class Students {
+                public function studentInfo(){
+                    echo "My name is Md.Hiron Mollik";
+                }
+
+                public function __destruct(){
+                    echo " Sagor";
+                }
+            }
+
+            $obj = new Students;
+            $obj->studentInfo();
+       </code>
+   </pre>
     
 </body>
 </html>
 
 <?php
-//Constructor is a magic method
-class Person {
+    class Students {
+        
+        public function studentInfo(){
+            echo "My name is Md.Hiron Mollik";
+        }
 
-    public $name;
-    public $age;
-    public $id;
-
-    public function __construct($name, $age){
-        $this->name = $name;
-        $this->age  = $age;
-    }
-
-    public function setId($id){
-        $this->id = $id;
-    }
-
-
-    public function __destruct(){
-        echo "This is destruct function<br/>";
-        if(!empty($this->id)){
-            echo "Saving person";
+        public function __destruct(){
+            echo " Sagor";
         }
     }
-}
 
-
-$info = new Person('Md.Hiron', 27);
-$info->setId(12);
+    $obj = new Students;
+    $obj->studentInfo();
 
 ?>

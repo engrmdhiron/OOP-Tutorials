@@ -11,9 +11,26 @@
 <br>
 <a href="index.php"><button>Back to Index</button></a></h1>
 <p><b>Magic Methods</b></p>
+<style type="text/css">
+	a:link {
+	  text-decoration: none;
+	}
+
+	a:visited {
+	  text-decoration: none;
+	}
+
+	a:hover {
+	  text-decoration: underline;
+	}
+
+	a:active {
+	  text-decoration: underline;
+	}
+</style>
 <p>The function names <br/>
-	__construct(),<br/>
-	__destruct(),<br/> 
+	<a href="construct.php" style="">__construct()</a>,<br/>
+	<a href="destruct.php">__destruct()</a>,<br/> 
 	__call(),<br/>
 	__callStatic(), <br/>
 	__get(),<br/> 
@@ -28,14 +45,5 @@
 	 __clone() and<br/> 
 	 __debugInfo()<br/> 
 are magical in PHP classes. You cannot have functions with these names in any of your classes unless you want the magic functionality associated with them. </p>
-<h3>__construct</h3>
-<p>Classes which have a constructor method call this method on each newly-created object, so it is suitable for any initialization that the object may need before it is used. </p>
-<blockquote>
-    <pre>
-        <code>
-            
-        </code>
-    </pre>
-</blockquote>
 </body>
 </html>
