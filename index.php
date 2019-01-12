@@ -16,7 +16,7 @@
 <a href="class_property_object_method.php"><button>Class, Property, Objects and Methods</button></a><br>
 <a href="class_property_object_method_part_2.php"><button>Class, Property, Objects and Methods Part-2</button></a><br>
 <a href="construct.php"><button>Construct</button></a><br>
-<a href="destructor.php"><button>Destructor</button></a><br>
+<a href="destruct.php"><button>Destruct</button></a><br>
 <a href="constants.php"><button>Constants</button></a><br>
 <a href="static_properties_methods.php"><button>Static Properties and Methods</button></a><br>
 <a href="inheritance.php"><button>Inheritance</button></a><br>

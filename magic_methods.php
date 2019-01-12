@@ -31,10 +31,10 @@
 <p>The function names <br/>
 	<a href="construct.php" style="">__construct()</a>,<br/>
 	<a href="destruct.php">__destruct()</a>,<br/> 
+	<a href="get_magic_method.php">__get()</a>,<br/> 
+	__set(), <br/>
 	__call(),<br/>
 	__callStatic(), <br/>
-	__get(),<br/> 
-	__set(), <br/>
 	__isset(), <br/>
 	__unset(),<br/> 
 	__sleep(), <br/>
