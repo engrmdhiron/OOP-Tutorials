@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-   <h1 style="color:blue; text-align:center;"><u>set</u>
+   <h1 style="color:blue; text-align:center;"><u>__set()</u>
    <br>
-   <a href="index.php"><button>Back to Index</button></a></h1>
-   <h3>__set</h3>
+   <a href="magic_methods.php"><button>Back to Index</button></a></h1>
+   <h3>__set($property, $value)</h3>
    <p>__set($property, $value), The __set() magic function complements __get(), in that it is called whenever an undefined class variable is set in your scripts. </p>
    <pre>
        <code>

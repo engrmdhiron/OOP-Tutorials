@@ -32,8 +32,8 @@
 	<a href="construct.php" style="">__construct()</a>,<br/>
 	<a href="destruct.php">__destruct()</a>,<br/> 
 	<a href="get_magic_method.php">__get()</a>,<br/> 
-	__set(), <br/>
-	__call(),<br/>
+	<a href="set_magic_method.php">__set()</a>,<br/> 
+	<a href="call_magic_method.php">__call()</a>,<br/>
 	__callStatic(), <br/>
 	__isset(), <br/>
 	__unset(),<br/> 

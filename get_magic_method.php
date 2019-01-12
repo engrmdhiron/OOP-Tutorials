@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-   <h1 style="color:blue; text-align:center;"><u>get</u>
+   <h1 style="color:blue; text-align:center;"><u>__get()</u>
    <br>
-   <a href="index.php"><button>Back to Index</button></a></h1>
-   <h3>__get</h3>
+   <a href="magic_methods.php"><button>Back to Index</button></a></h1>
+   <h3>__get($property)</h3>
    <p>__get($property), This is the first of three slightly unusual magic functions, and allows you to specify what to do if an unknown class variable is read from within your script. </p>
    <pre>
        <code>
