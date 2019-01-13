@@ -42,8 +42,10 @@
 	__toString(),<br/> 
 	__invoke(),<br/> 
 	__set_state(),<br/>
-	 __clone() and<br/> 
-	 __debugInfo()<br/> 
+	__clone() and<br/> 
+	__debugInfo()<br/> 
+	__autoload()/spl_autoload_register()<br/> 
+
 are magical in PHP classes. You cannot have functions with these names in any of your classes unless you want the magic functionality associated with them. </p>
 </body>
 </html>
