@@ -1,8 +1,9 @@
 <?php 
-	class Php {
+	class Ruby {
 		public function __construct(){
-			echo "I am learning PHP.<br>";
+			echo "I am learning Ruby.<br>";
 		}
 	}
+
 
  ?>

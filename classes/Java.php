@@ -1,8 +1,9 @@
 <?php 
-	class Php {
+	class Java {
 		public function __construct(){
-			echo "I am learning PHP.<br>";
+			echo "I am learning JAVA.<br>";
 		}
 	}
+
 
  ?>

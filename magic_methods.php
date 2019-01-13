@@ -44,7 +44,7 @@
 	__set_state(),<br/>
 	__clone() and<br/> 
 	__debugInfo()<br/> 
-	__autoload()/spl_autoload_register()<br/> 
+	<a href="autoload_magic_method.php">__autoload()/spl_autoload_register()</a><br/> 
 
 are magical in PHP classes. You cannot have functions with these names in any of your classes unless you want the magic functionality associated with them. </p>
 </body>

@@ -10,96 +10,46 @@
     <h1 style="color:blue; text-align:center;"><u>__autoload()</u>
     <br>
     <a href="index.php"><button>Back to Index</button></a></h1>
-    <p>Interfaces are defined to provide a common function names to the implementers. Different implementors can implement those interfaces according to their requirements. You can say, interfaces are skeletons which are implemented by developers.</p>
-    <blockquote>
+    <p>This global function is called whenever you try to create an object of a class that hasn't been defined. It takes just one parameter, which is the name of the class you have not defined. If you define an object as being from a class that PHP does not recognise, PHP will run this function, then try to re-create the object - you have a second chance to have the right class. </p>
     <pre>
         <code>
-        interface school{
-            public function mySchool();
-        }
+            //Without autoload function 
+            include "classes/Php.php";
+            include "classes/Java.php";
+            include "classes/Ruby.php";
+            .......
 
-        interface collage{
-            public function myCollage();
-        }
-
-        class Students {
-
-            public function student($name, $age){
-                echo "My name is : ".$name.' and age is : '.$sage;
+            //Most common autoload function is __autoload()
+            function __autoload($class_name){
+                include "classes/".$class_name.'.php';
             }
-        }
 
-        class Teacher extends Students implements school, collage{
-
-            // public function __construct(){
-            //     $this->mySchool();
-            // }
-            public function student($name, $age, $mobile=false){
-                echo "My name is ".$name.' , age is '.$age.' and mobile number is '.$mobile;
-            }
+            //Most popular autoload function is apl_autoload_register()
+            spl_autoload_register(function($class_name){
+                include "classes/".$class_name.'.php';
+            });
             
-            public function mySchool(){
-                echo "My School is Chautpur High School";
-            }
-
-            public function myCollage(){
-                echo "My collage is Infra Polytechnic Institute";
-            }
-        }
-
-        $name = 'Md Hiron Mollik (sagor)';
-        $age = 27;
-        $mobile = '01671909000';
-
-        $teacher = new Teacher;
-        $teacher->student($name, $age, $mobile);
-        $teacher->mySchool();
-        $teacher->myCollage();
+            $php = new Php;
+            $java = new Java;
+            $rubt = new Ruby;
         </code>
-        </pre>
-    </blockquote>
+    </pre>
     <?php 
-    interface school{
-        public function mySchool();
-    }
-
-    interface collage{
-        public function myCollage();
-    }
-
-    class Students {
-
-        public function student($name, $age){
-            echo "My name is : ".$name.' and age is : '.$sage;
-        }
-    }
-
-    class Teacher extends Students implements school, collage{
-
-        // public function __construct(){
-        //     $this->mySchool();
-        // }
-        public function student($name, $age, $mobile=false){
-            echo "My name is ".$name.' , age is '.$age.' and mobile number is '.$mobile.'<br>';
-        }
-        
-        public function mySchool(){
-            echo "My School is Chautpur High School <br>";
+        //autoload() function 
+        function __autoload($class_name){
+            include "classes/".$class_name.'.php';
         }
 
-        public function myCollage(){
-            echo "My collage is Infra Polytechnic Institute";
-        }
-    }
+        //spl_autoload_register() function
+        spl_autoload_register(function($class_name){
+            include "classes/".$class_name.'.php';
+        });
 
-    $name = 'Md Hiron Mollik (sagor)';
-    $age = 27;
-    $mobile = '01671909000';
+        $php = new Php;
+        $java = new Java;
+        $ruby = new Ruby;
+    
 
-    $teacher = new Teacher;
-    $teacher->student($name, $age, $mobile);
-    $teacher->mySchool();
-    $teacher->myCollage();
-?>
+    ?>
 </body>
 </html>
