@@ -24,7 +24,7 @@
                 include "classes/".$class_name.'.php';
             }
 
-            //Most popular autoload function is apl_autoload_register()
+            //Most popular autoload function is spl_autoload_register()
             spl_autoload_register(function($class_name){
                 include "classes/".$class_name.'.php';
             });
